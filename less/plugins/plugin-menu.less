@@ -1,8 +1,58 @@
-// ----
-// menu
-// ----
+// --------------------------------
+// HIMALAYA: Plugin-Menu
+// --------------------------------
 
 // Menu sections widget
 // --------------------
 
-//...
+// Turns menu sections into buttons
+.menusections  .menusections-item {
+    padding: 8px 26px;
+    background-color: @button-color;
+    .transition(@duration:0.2s, @ease:ease-in-out); // Mixin
+
+    &:hover {
+        background-color: @button-color-alt;
+        text-decoration: none;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.menu-item-name {
+    font-family: @font-swatch7-font-family;
+    color: @font-swatch7-color;
+    font-size: @font-swatch7-font-size;
+    line-height: @font-swatch7-line-height;
+
+    font-style: italic;
+    -webkit-font-smoothing: antialiased;
+
+     &:hover {
+        text-decoration: none;
+     }
+}
+
+
+// Menu Title
+// --------------------
+.menu__item-title {
+    font-style: italic;
+}
+
+.dietary-item {
+    &:before {
+        content: "/";
+        color: #a5a5a5;
+        font-weight: 700;
+    }
+}
+
+
+// Image
+// --------------------
+.menu__image-link {
+    background-color: transparent;
+}

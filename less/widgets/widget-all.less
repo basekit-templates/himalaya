@@ -1,0 +1,520 @@
+// --------------------------------
+// HIMALAYA: Widget-All
+// --------------------------------
+
+// -----------------------------
+// #Table of Contents
+// -----------------------------
+
+//  1.   #LOGO
+//  2.   #COMPANY NAME
+//  3.   #NAVIGATION
+//  4.   #FEATURE
+
+//  5.   #IMAGES
+//  6.   #GALLERY
+//  7.   #SLIDESHOW
+
+//  8.   #BUTTONS
+//  8.1  -- #STANDARD
+//  8.2  -- #TWEET
+//  8.3  -- #DROPBOX
+//  8.4  -- #CLICK TO CALL
+//  8.5  -- #PAYPAL
+
+//  9.   #CONTACT FORM
+// 10.   #SIGNUP FORM
+
+// 11.   #SOCIAL ICONS
+// 12.   #TWITTER FEED
+
+// 13.   #DIVIDER (KEYLINE)
+// 14.   #PROFILE
+// 15.   #YELP
+
+
+
+
+// -----------------------------
+// 1.  #Logo
+// -----------------------------
+
+
+.logo { margin-bottom: 30px; } // Spaces the logo out nicely
+
+.logo-image { margin: 0 auto; } // Centres that old logo
+
+
+
+
+// -----------------------------
+// 2.  #Company Name
+// -----------------------------
+
+
+// Centres that old company name and spaces things out a treat
+.companyname {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+
+
+
+// -----------------------------
+// 3.  #Navigation
+// -----------------------------
+
+// See 'widget-navigation.less'
+
+
+
+
+// -----------------------------
+// 4.  #Feature
+// -----------------------------
+
+.feature { margin-bottom: 80px;}
+
+.feature__background-image {
+    height: 400px;
+
+// Flexbox to vertically and horizontally align the semit transparent box
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -moz-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.content-wrap {
+    width: 80%;
+    height: 80%;
+    background-color: fade(@color-swatch2,30%);
+
+    // This vertically aligns the text and button
+    .flex-vert-center; // Mixin
+
+    @media @mobile {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.content-inner-wrap {
+    width: 100%;
+    text-align: center;
+
+    .headline,
+    .strapline {
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+
+
+
+// -----------------------------
+// 5. #Images
+// -----------------------------
+
+// Image Widget
+// ------------
+
+.imagewidget {
+    .image-title,
+    .image-description {
+        color: @font-swatch5-color;
+        text-shadow: none;
+    }
+}
+
+
+
+
+
+
+// -----------------------------
+// 6.  #Gallery
+// -----------------------------
+
+// Gallery Item
+// -----------------
+
+.gallery__gallery-item {
+    overflow: hidden;
+}
+
+
+// Gallery Caption
+// --------------------
+
+.gallery .caption,
+.gallery .figure:hover .caption {
+    background-color: transparent !important;
+    padding: 20px 20px 20px 0 !important;
+    display: block !important;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+
+// Title & Description
+// -----------------------
+
+.gallery__image-title {
+    font-family: @font-swatch2-font-family;
+    font-size: @font-swatch2-font-size;
+    position: relative;
+    margin: 0 0 8px;
+    padding: 0.4em 1em;
+    background: fade(@color-swatch2,30%);
+
+    // Positions the title before hover
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-360px,0,0);
+    transform: translate3d(-360px,0,0);
+}
+
+.gallery__image-description {
+    display: relative;
+    margin: 0 0 8px;
+    padding: 0.4em 1em;
+    background: fade(@color-swatch2,30%);
+
+    // Positions the title before hover
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-360px,0,0);
+    transform: translate3d(-360px,0,0);
+}
+
+.gallery__figure:hover .gallery__image-title ,
+.gallery__figure:hover .gallery__image-description{
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.gallery__image-title {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.gallery__image-description {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+
+
+
+
+// -----------------------------
+// 7.  #Slideshow
+// -----------------------------
+
+
+
+
+
+
+// -----------------------------
+// 8.  #Buttons
+// -----------------------------
+
+//  8.1  #STANDARD
+//  --------------
+
+button,
+.button {
+    font-style: italic;
+    -webkit-font-smoothing: antialiased;
+    .transition(@duration:0.2s, @ease:ease-in-out); // Mixin
+
+    &:hover {
+        background-color: @button-color-alt;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+//  8.2  #FEATURE
+//  --------------
+
+.feature__button { margin-top: 20px;}
+
+.feature__button:hover {
+    background-color: fade(@button-color,40%); // Button BG Color
+}
+
+
+//  8.2  #TWEET
+//  --------------
+
+
+//  8.3  #STANDARD
+//  --------------
+
+
+
+
+//  8.4  #DROPBOX
+//  --------------
+
+
+
+//  8.5  #CLICK TO CALL
+//  --------------
+
+
+//  8.5  #PAYPAL
+//  --------------
+
+
+
+
+// -----------------------------
+// 9.  #Forms
+// -----------------------------
+
+// Form
+// ----------
+
+// Form Body
+.form-body {
+    margin: 30px 0;
+    @media @mobile {
+        margin: 20px;
+    }
+}
+
+// Form Group
+.form-group {
+    margin-bottom: 20px;
+    @media @mobile {
+        margin-bottom: 10px;
+    }
+}
+
+
+// Legend
+// ----------
+
+legend {
+    width: 100%;
+    font-size: @font-swatch2-font-size;
+    font-family: @font-swatch2-font-family;
+    color: @color-swatch4;
+    letter-spacing: @font-swatch2-letter-spacing;
+    @media @mobile {
+        padding: 6px 20px;
+    }
+}
+
+
+// Label
+// ----------
+
+label {
+    font-family: @font-swatch7-font-family;
+    font-size: @font-swatch7-font-size;
+    font-style: italic;
+    color: @color-swatch4;
+}
+
+// Select
+// ----------
+
+select {
+    height: 36px;
+    outline: none;
+    border-radius: 0;
+    text-indent: 0;
+    border: 1px solid darken(@color-swatch1,10%);
+    background-color: @color-swatch1;
+    font-size: 12px;
+    &:hover, &:focus {
+        background-color: @color-swatch1;
+        cursor: pointer;
+    }
+}
+
+
+// Inputs: Text
+// ------------
+
+input[type="search"],
+input[type="email"],
+input[type="password"],
+textarea,
+.input--single-line {
+    // Padding is set in stylesheet.less
+    border: 2px solid @button-color;
+    resize: none;
+    &:focus {
+        border-color: @contrast-color;
+        box-shadow: none;
+    }
+
+    @media @tablet {
+        // Fix for iOS devices
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
+    }
+}
+
+
+
+
+// -----------------------------
+// 10.  #Signup Form
+// -----------------------------
+
+
+
+
+
+// -----------------------------
+// 11.  #Social Icons
+// -----------------------------
+
+// Item Link
+.social-link {
+    .transition(@duration:0.2s, @ease:ease-in-out); // Mixin
+    &:hover {
+        color: @contrast-color-alt;
+        text-decoration: none;
+    }
+}
+
+// Hide Social name
+.social-name {
+    display: none;
+}
+
+
+
+
+// -----------------------------
+// 12.  #Twitter Feed
+// -----------------------------
+
+
+// Tweet Item
+// ----------
+
+.tweet-item {
+    @media @tablet {
+        text-align: center;
+    }
+}
+
+
+
+
+// Avatar & Tweet Wrap
+// -------------------
+
+// // Tweet Wrap
+.tweet-wrap {
+    width: 85%;
+    padding: 0 20px;
+}
+
+// Both
+.avatar,
+.tweet-wrap {
+    display: inline-block; // Display element inline
+    vertical-align: top;
+
+    @media @tablet {
+        margin-bottom: 10px;
+    }
+}
+
+
+// Account Link (Username)
+// -----------------------
+
+.account-link {
+    padding-bottom: 1px;
+    font-family: @font-swatch1-font-family;
+
+    &:hover {
+        border-bottom: 2px solid @color-swatch7;
+        text-decoration: none;
+    }
+}
+
+
+// Tweet Metadata
+// --------------
+
+.tweet-metadata {
+    font-size: 12px;
+    color: lighten(@font-swatch5-color,10%);
+}
+
+
+
+
+
+// -----------------------------
+// 13.  #Divider (Keyline)
+// -----------------------------
+
+
+
+
+
+
+// -----------------------------
+// 14. #Profile
+// -----------------------------
+
+
+
+
+// 14. Footer Widgets
+// --------------------------
+
+
+
+
+
+
+
+// -----------------------------
+// 15. #Yelp
+// -----------------------------
+
+.review-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+
+
+
+// -----------------------------
+// 16. #Pagination
+// -----------------------------
+
+
+
+
+

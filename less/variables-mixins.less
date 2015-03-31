@@ -35,13 +35,20 @@
 // Colour swatches
 // -----------------------------
 
-@bg-color:              @color-swatch1; // Background
-@contrast-color:        @color-swatch2; // Contrast Color
-@button-color:          @color-swatch3; // Button BG Color
-@heading-color:         @color-swatch4; // Heading Text Color (H1 - H4)
-@paragraph-color:       @color-swatch5; // Paragraph Text Color
-@nav-color:             @color-swatch6; // Nav Link Color
-@border-color:          @color-swatch7; // Page border Color
+@bg-color:              @color-swatch1;                 // Background
+
+@contrast-color:        @color-swatch2;                 // Contrast Color
+@contrast-color-alt:    darken(@color-swatch2,10%);     // Contrast Color
+
+@button-color:          @color-swatch3;                 // Button BG Color
+@button-color-alt:      lighten(@button-color,20%);     // Button BG Color
+
+@heading-color:         @color-swatch4;                 // Heading Text Color (H1 - H4)
+@paragraph-color:       @color-swatch5;                 // Paragraph Text Color
+
+@nav-color:             @color-swatch6;                 // Nav Link Color
+
+@border-color:          @color-swatch7;                 // Page border Color
 
 
 
@@ -72,7 +79,7 @@
 // Transitions
 // -------------------
 
-.transition(@duration:0.2s, @ease:ease-out) {
+.transition(@duration:0.2s, @ease:ease-in-out) {
   -webkit-transition: all @duration @ease;
   -moz-transition: all @duration @ease;
   -o-transition: all @duration @ease;

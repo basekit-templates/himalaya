@@ -21,7 +21,56 @@
 
 
 
-// 1. Logo & Company Name
+// 2. Ecommerce Basket
 // ----------------------
 
+// .ecombasket {
+//     position: fixed;
+//     right: 0;
+//     z-index: 1;
+// }
+
+
+// 2. Feature Widget
+// ----------------------
+
+.feature__background-image {
+    height: 400px;
+
+// Flexbox to vertically and horizontally align the semit transparent box
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -moz-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.content-wrap {
+    width: 90%;
+    height: 90%;
+    background-color: fade(@color-swatch2,30%);
+
+    // This vertically aligns the text and button
+    .flex-vert-center // Mixin
+}
+
+.content-inner-wrap {
+    width: 100%;
+    text-align: center;
+
+    .headline,
+    .strapline {
+        -webkit-font-smoothing: antialiased;
+    }
+}
 
