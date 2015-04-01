@@ -39,7 +39,6 @@
 // 1.  #Logo
 // -----------------------------
 
-
 .logo { margin-bottom: 30px; } // Spaces the logo out nicely
 
 .logo-image { margin: 0 auto; } // Centres that old logo
@@ -50,7 +49,6 @@
 // -----------------------------
 // 2.  #Company Name
 // -----------------------------
-
 
 // Centres that old company name and spaces things out a treat
 .companyname {
@@ -242,6 +240,8 @@ button,
     font-style: italic;
     -webkit-font-smoothing: antialiased;
     .transition(@duration:0.2s, @ease:ease-in-out); // Mixin
+    padding: 8px 26px;
+    line-height: @font-swatch7-line-height;
 
     &:hover {
         background-color: @button-color-alt;
@@ -340,11 +340,12 @@ label {
 // ----------
 
 select {
-    height: 36px;
+    height: 44px;
     outline: none;
     border-radius: 0;
+    -webkit-border-radius: 0;
     text-indent: 0;
-    border: 1px solid darken(@color-swatch1,10%);
+    border: 2px solid @button-color;
     background-color: @color-swatch1;
     font-size: 12px;
     &:hover, &:focus {
@@ -486,11 +487,6 @@ textarea,
 // 14. #Profile
 // -----------------------------
 
-
-
-
-// 14. Footer Widgets
-// --------------------------
 
 
 
