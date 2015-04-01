@@ -1,5 +1,5 @@
 // ---------------------
-// BasePlate main styles
+// Himalaya main styles
 // ---------------------
 
 // Template Imports
@@ -8,13 +8,15 @@
 
 @import "@{templateLocal}/less/variables-mixins.less";              // Variables
 
-@import "@{templateLocal}/less/widgets/widget-all.less";            // Layout
+@import "@{templateLocal}/less/widgets/widget-all.less";            // Widgets
 @import "@{templateLocal}/less/widgets/widget-gallery.less";
 @import "@{templateLocal}/less/widgets/widget-navigation.less";
 
 @import "@{templateLocal}/less/plugins/plugin-blog.less";           // Plugins
 @import "@{templateLocal}/less/plugins/plugin-menu.less";
 @import "@{templateLocal}/less/plugins/plugin-ecommerce.less";
+
+
 
 
 // Template Styles
@@ -41,4 +43,18 @@ input, textarea, button, .button {
 // Border that runs around the body of the page
 body {
     border: 10px solid @border-color;
+}
+
+
+
+
+// Shared Typographic Styles
+// -------------------------
+
+// Categories & Tags
+.category-link,
+.tag-link {
+    font-family: @font-swatch7-font-family;
+    font-size: @font-swatch7-font-size;
+    font-style: italic;
 }
