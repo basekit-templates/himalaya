@@ -1,6 +1,40 @@
-// ---------
-// ecommerce
-// ---------
+// --------------------------------
+// HIMALAYA: Ecommerce
+// --------------------------------
+
+// Product Filters
+// ---------------
+
+// Search Input
+.product-filters .input--search {
+    height: 44px;
+}
+
+// Legend
+.ecomproductslist__legend {
+    display: none;
+}
+
+
+.ecomproductslist__fieldset--filters {
+    text-align: center;
+}
+
+.select--filter {
+    @media @tablet {
+        display: block;
+        width: 100%;
+    }
+}
+
+.product-filters .form-group {
+    @media @mobile {
+        display: block;
+    }
+}
+
+
+
 
 // Product list widget
 // -------------------
@@ -21,6 +55,49 @@
     @media @mobile {
         width: 100%;
         margin-bottom: 4%;
+    }
+}
+
+.product-item-image,
+.product-item-image .image-link {
+    .transition(@duration:0.2s, @ease:ease-in-out);
+    &:hover {
+        background-color: @bg-color;
+    }
+}
+
+.product-item-title,
+.ecomproductslist__title-link {
+    font-style: italic;
+    color: @heading-color;
+}
+
+
+
+// Product Item
+// -------------
+
+.product-images {
+    float: left;
+    width: 55%;
+    margin-right: 5%;
+
+    @media @tablet {
+        width: 100%;
+        float: none;
+    }
+}
+
+.product-content {
+    float: left;
+    width: 40%;
+
+    text-align: center;
+
+    @media @tablet {
+    width: 100%;
+    float: none;
+    margin: 16vh 0;
     }
 }
 
@@ -78,4 +155,29 @@
 }
 .remove-text {
     display: none; // Hides remove text
+}
+
+
+// Basket Summary
+// --------------
+
+// Table Styling
+th,
+td,
+table {
+    background-color: transparent;
+    border: none;
+}
+
+.summary-table .cell {
+    padding: 22px 12px;
+}
+
+.table-row--heading {
+    border-bottom: 4px solid @border-color;
+}
+
+// Fixes quantity button line height
+.quantity-wrap .button--quantity {
+    line-height: 0px;
 }
