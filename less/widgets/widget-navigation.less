@@ -47,8 +47,9 @@
     }
 }
 
-// Selected state
-.navigation-item.selected  .item-name {
+
+// Selected Navigation Link
+.navigation-item.selected > .item-name {
     text-decoration: underline;
 }
 
@@ -86,7 +87,11 @@
     }
 }
 
-.navigation-list--children, .default-page .navigation-list--children {
+.navigation-list--children,
+.default-page .navigation-list--children {
+       -moz-box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.16);
     @media @tablet {
         border-top: none;
         background-color: @color-swatch1;
