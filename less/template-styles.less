@@ -9,6 +9,14 @@
 // Border that runs around the body of the page
 body {
     border: 10px solid @border-color;
+
+    display: flex; // Switch on flexbox layout
+    flex-direction: column; // Orient flexbox to columns
+    min-height: 100vh; // Set minimal height to height of the viewport
+}
+
+.template-content {
+    flex: 1; // Stretch the body content to push the footer down
 }
 
 
