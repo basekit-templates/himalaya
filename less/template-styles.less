@@ -1,0 +1,87 @@
+// -------------------------
+// HIMALAYA: Template Styles
+// -------------------------
+
+
+// Body Styles
+// -----------
+
+// Border that runs around the body of the page
+body {
+    border: 10px solid @border-color;
+}
+
+
+
+
+// Container
+// ---------
+
+.container {
+    width: 90%;
+    margin: 0 5%;
+    @media only screen and (min-width: 1140px) {
+        width: 960px; // 1140px - 10% for margins
+        margin: 0 auto;
+    }
+}
+
+
+
+
+// Formatting of Inputs
+// --------------------
+
+// Formatting all inputs and buttons so they match in size
+input, textarea, button, .button {
+    padding: 8px 26px;
+    line-height: @font-swatch7-line-height;
+}
+
+
+
+
+// Shared Typographic Styles
+// -------------------------
+
+// Categories & Tags
+.category-link,
+.tag-link {
+    font-family: @font-swatch7-font-family;
+    font-size: @font-swatch7-font-size;
+    font-style: italic;
+}
+
+
+
+
+// Footer Positioning
+// ------------------
+
+.container-footer {
+    width: 90%;
+    margin: 0 5%;
+    padding: 30px 0;
+    @media only screen and (min-width: 1140px) {
+        width: 960px; // 1140px - 10% for margins
+        margin: 0 auto;
+    }
+
+    // Flex box for desktop
+    border-top: 4px solid @border-color;
+    display: -webkit-flex;
+    display: flex;
+   -webkit-flex-direction: row;
+           flex-direction: row;
+       -webkit-flex-align: center;
+           -ms-flex-align: center;
+      -webkit-align-items: center;
+              align-items: center;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+    @media @tablet {
+        display: block;
+        text-align: center;
+        margin-bottom: 0 auto;
+    }
+}

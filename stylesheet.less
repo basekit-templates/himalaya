@@ -1,96 +1,18 @@
-// ---------------------
-// Himalaya main styles
-// ---------------------
+// -------------------------
+// HIMALAYA: Main Stylesheet
+// -------------------------
 
 // Template Imports
 // ----------------
 @import "@{templateCommon}/bk-less-framework.less";                 // BK LESS Framework
 
+@import "@{templateLocal}/less/template-styles.less";
+
 @import "@{templateLocal}/less/variables-mixins.less";              // Variables
 
 @import "@{templateLocal}/less/widgets/widget-all.less";            // Widgets
-@import "@{templateLocal}/less/widgets/widget-gallery.less";
-@import "@{templateLocal}/less/widgets/widget-navigation.less";
-@import "@{templateLocal}/less/widgets/widget-slideshow.less";
+@import "@{templateLocal}/less/widgets/widget-navigation.less";     // Navigation
 
 @import "@{templateLocal}/less/plugins/plugin-blog.less";           // Plugins
 @import "@{templateLocal}/less/plugins/plugin-menu.less";
 @import "@{templateLocal}/less/plugins/plugin-ecommerce.less";
-
-
-
-
-// Template Styles
-// ---------------
-
-// Wrapping container
-.container {
-    width: 90%;
-    margin: 0 5%;
-    @media only screen and (min-width: 1140px) {
-        width: 960px; // 1140px - 10% for margins
-        margin: 0 auto;
-    }
-}
-
-
-// Formatting all inputs and buttons so they match in size
-input, textarea, button, .button {
-    padding: 8px 26px;
-    line-height: @font-swatch7-line-height;
-}
-
-
-// Border that runs around the body of the page
-body {
-    border: 10px solid @border-color;
-    height: 100vh;
-}
-
-
-
-
-// Shared Typographic Styles
-// -------------------------
-
-// Categories & Tags
-.category-link,
-.tag-link {
-    font-family: @font-swatch7-font-family;
-    font-size: @font-swatch7-font-size;
-    font-style: italic;
-}
-
-
-
-
-// Footer
-// ------
-
-.container-footer {
-    width: 90%;
-    margin: 0 5%;
-    padding: 30px 0;
-    @media only screen and (min-width: 1140px) {
-        width: 960px; // 1140px - 10% for margins
-        margin: 0 auto;
-    }
-
-    // Flex box for desktop
-    border-top: 4px solid @border-color;
-    display: -webkit-flex;
-    display: flex;
-   -webkit-flex-direction: row;
-           flex-direction: row;
-       -webkit-flex-align: center;
-           -ms-flex-align: center;
-      -webkit-align-items: center;
-              align-items: center;
-  -webkit-justify-content: space-between;
-          justify-content: space-between;
-    @media @tablet {
-        display: block;
-        text-align: center;
-        margin-bottom: 0 auto;
-    }
-}
