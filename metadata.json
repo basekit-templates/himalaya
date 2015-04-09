@@ -3,6 +3,7 @@
     "thumbnail": "thumbnail.png",
     "widgetVersion":2,
     "pageTypes": ["home"],
+    "templateType":"standard",
     "tags": {
     "en": ["minimal", "clean", "multipurpose", "simple", "design", "portfolio", "art", "images", "agency", "creative", "modern", "photography"],
     "es": ["minimalista", "limpio", "multiuso", "simple", "diseño", "portafolio", "arte", "imágenes", "agencia", "moderno", "fotográfico"],
