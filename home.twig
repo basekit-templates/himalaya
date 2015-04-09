@@ -8,13 +8,8 @@
     <!-- Page Content -->
     <section class="template-content">
 
-        <!-- Template Widgets -->
-
-        {{widget('extendednavigation', 'navigation', {"align":"center"})|raw}}
-
-<!--         {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png'),"showTplWidget":"0"})|raw}} -->
-
-        {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+        <!-- Header Include -->
+        {% include "includes/header.twig" %}
 
         {{widget('feature', 'featurehome', {
             "header": "profile",
@@ -23,8 +18,6 @@
             'showBtn': true,
             buttonText: "Lorem Ipsum"
         })|raw}}
-
-        <!-- End Template Widgets -->
 
         <!-- Main Widget Zone -->
         {{zone('main')|raw}}

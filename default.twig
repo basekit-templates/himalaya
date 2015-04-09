@@ -8,23 +8,14 @@
     <!-- Page Content -->
     <section class="template-content">
 
-        <!-- Template Widgets -->
-
-        {{widget('extendednavigation', 'navigation', {"align":"center"})|raw}}
-
-<!--         {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png'),"showTplWidget":"0"})|raw}} -->
-
-        {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
-
-        <!-- End Template Widgets -->
+        <!-- Header Include -->
+        {% include "includes/header.twig" %}
 
         <!-- Main Widget Zone -->
         {{zone('main')|raw}}
 
     </section>
     <!-- End Page Content -->
-
-{% include "includes/footer.twig" %}
 
 </div>
 <!-- End Container -->
