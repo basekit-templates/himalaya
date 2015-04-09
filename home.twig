@@ -5,11 +5,11 @@
 <!-- Container -->
 <div class="container">
 
+    <!-- Header Include -->
+    {% include "includes/header.twig" %}
+
     <!-- Page Content -->
     <section class="template-content">
-
-        <!-- Header Include -->
-        {% include "includes/header.twig" %}
 
         {{widget('feature', 'featurehome', {
             "header": "profile",
@@ -25,9 +25,9 @@
     </section>
     <!-- End Page Content -->
 
-    {% include "includes/footer.twig" %}
-
 </div>
 <!-- End Container -->
+
+{% include "includes/footer.twig" %}
 
 {% endblock %}

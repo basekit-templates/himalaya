@@ -5,11 +5,11 @@
 <!-- Container -->
 <div class="container">
 
+    <!-- Header Include -->
+    {% include "includes/header.twig" %}
+
     <!-- Page Content -->
     <section class="template-content">
-
-        <!-- Header Include -->
-        {% include "includes/header.twig" %}
 
         <!-- Main Widget Zone -->
         {{zone('main')|raw}}
