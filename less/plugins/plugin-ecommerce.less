@@ -58,11 +58,13 @@
     }
 }
 
-.product-item-image,
-.product-item-image .image-link {
-    .transition(@duration:0.2s, @ease:ease-in-out);
-    &:hover {
-        background-color: @bg-color;
+.product-list {
+    .product-item-image,
+    .product-item-image .image-link {
+        .transition(@duration:0.2s, @ease:ease-in-out);
+        &:hover {
+            background-color: @bg-color;
+        }
     }
 }
 
@@ -77,6 +79,7 @@
 // Product Item
 // -------------
 
+// Images
 .product-images {
     float: left;
     width: 55%;
@@ -88,6 +91,11 @@
     }
 }
 
+.product-image .image-link {
+    background-color: @bg-color;
+}
+
+// Content
 .product-content {
     float: left;
     width: 40%;
