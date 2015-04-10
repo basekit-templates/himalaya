@@ -180,11 +180,11 @@
 .gallery .gallery-item {
     position: relative;
     width: 32%;
-    margin-bottom: 2%;
+    margin-bottom: 20px;
     // Display 100% at mobile
     @media @mobile {
         width: 100%;
-        margin-bottom: 4%;
+        margin-bottom: 20px;
     }
 }
 
@@ -243,10 +243,14 @@ a.gallery__caption-link:hover {
 .gallery .figure:hover .caption {
     background-color: transparent !important;
     padding: 20px 20px 20px 0 !important;
-    display: block !important;
+    display: block;
     width: 100%;
     position: absolute;
     bottom: 0;
+
+    @media @tablet {
+        display: none;
+    }
 }
 
 
