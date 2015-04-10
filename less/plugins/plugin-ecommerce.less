@@ -41,9 +41,18 @@
 
 // Product list container
 .product-list {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+
     justify-content: space-between;
+    -webkit-justify-content: space-between;
 }
 
 // Product items in container
