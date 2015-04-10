@@ -415,6 +415,12 @@ button.pause-toggle {
         margin-right: 0;
     }
 }
+
+// Ensures pause button is aligned centrally if next and prev buttons are hidden
+button.pause-toggle {
+    margin: 0 auto;
+}
+
 // Removes button text
 .responsiveslideshow__control-text {
     display: none;
@@ -683,6 +689,16 @@ textarea,
 .tweet-item {
     @media @tablet {
         text-align: center;
+    }
+}
+
+.responsivecolumns {
+    .tweet-item {
+        text-align: center;
+    }
+
+    .avatar {
+        margin-bottom: 20px;
     }
 }
 
