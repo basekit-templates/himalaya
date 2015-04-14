@@ -18,68 +18,54 @@
 }
 
 
-.ecomproductslist__form {
-    .flex;
-    .flex-wrap(nowrap);
-    @media @tablet {
-        display: block;
-    }
+// Product Filters
+.product-filters {
 
-    .form-body {
+    .ecomproductslist__form-body {
+        .flex;
+        margin: 20px 0 0;
+
         @media @tablet {
-            .flex;
             .flex-wrap(wrap);
-            margin: 5px 0;
-
-            .form-group {
-                .flex-grow(1);
-            }
         }
         @media @mobile {
-            diplay: block;
+            display: block;
         }
+
     }
 
-    .fieldset--search {
-        .flex(1 50%);
-        @media @tablet {
-            display: block;
+    // Search Input
+    .fieldset--search, .fieldset--filters {
+        margin-bottom: 5px;
+        .form-group {
+            .flex-grow(1);
 
-            button {
-                margin-top: 33px;
+            @media @mobile {
+                display: block;
             }
         }
+        select {
+            height: 50px;
+            padding: 0 12px;
+            width: 100%;
+        }
+    }
+    .fieldset--search {
+        margin-bottom: 5px;
 
         .form-group:nth-child(2) {
             .flex-grow(0);
         }
-    }
 
-    .fieldset--filters {
-        .flex(1 100%);
-        padding-left: 10px;
-        @media @tablet {
-            display: block;
-            padding-left: 0;
+        .ecomproductslist__button {
+            margin-top: 33px;
+
+            @media @mobile {
+                margin-top: 0;
+            }
         }
     }
-
 }
-
-
-.select--filter {
-    @media @tablet {
-        display: block;
-        width: 100%;
-    }
-}
-
-.product-filters .form-group {
-    @media @mobile {
-        display: block;
-    }
-}
-
 
 
 
