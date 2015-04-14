@@ -5,6 +5,8 @@
 // Product Filters
 // ---------------
 
+
+
 // Search Input
 .product-filters .input--search {
     height: 44px;
@@ -16,9 +18,54 @@
 }
 
 
-.ecomproductslist__fieldset--filters {
-    text-align: center;
+.ecomproductslist__form {
+    .flex;
+    .flex-wrap(nowrap);
+    @media @tablet {
+        display: block;
+    }
+
+    .form-body {
+        @media @tablet {
+            .flex;
+            .flex-wrap(wrap);
+            margin: 5px 0;
+
+            .form-group {
+                .flex-grow(1);
+            }
+        }
+        @media @mobile {
+            diplay: block;
+        }
+    }
+
+    .fieldset--search {
+        .flex(1 50%);
+        @media @tablet {
+            display: block;
+
+            button {
+                margin-top: 33px;
+            }
+        }
+
+        .form-group:nth-child(2) {
+            .flex-grow(0);
+        }
+    }
+
+    .fieldset--filters {
+        .flex(1 100%);
+        padding-left: 10px;
+        @media @tablet {
+            display: block;
+            padding-left: 0;
+        }
+    }
+
 }
+
 
 .select--filter {
     @media @tablet {

@@ -14,8 +14,11 @@ body {
 // Stretch the body content to push the footer down
 .template-content {
     flex: 1;
-
     margin-top: 80px;
+
+    @media @mobile {
+        margin-top: 40px;
+    }
 }
 
 
@@ -94,5 +97,20 @@ input, textarea, button, .button {
         display: block;
         text-align: center;
         margin-bottom: 0 auto;
+    }
+
+    // Stops social icons wrapping when right side content is extra long
+    .footer-profile {
+      min-width: 25%;
+    }
+
+    .footer-content {
+        text-align: right;
+    }
+
+    .footer-content, .footer-profile {
+      @media @tablet {
+          text-align: center;
+      }
     }
 }

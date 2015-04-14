@@ -42,6 +42,10 @@
 .logo {
     margin: 60px auto 10px;
     text-align: center;
+
+    img {
+        display: inline-block;
+    }
 }
 
 
@@ -55,6 +59,15 @@
 .companyname {
     text-align: center;
     margin-top: 20px;
+}
+
+// If there is no navigation or logo present give adequate spacing to company name
+.template-header > div:first-child[data-widget-type="companyname"] {
+    margin-top: 80px;
+
+    @media @mobile {
+        margin-top: 40px;
+    }
 }
 
 
@@ -73,7 +86,10 @@
 // 4.  #Feature
 // -----------------------------
 
-.feature { margin-bottom: 80px;}
+.feature { 
+    margin-bottom: 80px;
+    position: relative;
+}
 
 .feature__background-image {
     min-height: 400px;
@@ -95,12 +111,26 @@
     -webkit-align-items: flex-end;
     -ms-flex-align: end;
     align-items: flex-end;
+
+    // Adds a slight black tint over the whole feature to make the text more readable
+    &:after {
+        content: "";
+        background-color: fade(@color-swatch7, 15%);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+    }
 }
 
 .content-wrap {
     width: 80%;
     min-height: 320px;
     background-color: fade(@color-swatch2,30%);
+    position: relative;
+    z-index: 2;
 
     // This vertically aligns the text and button
     .flex-vert-center; // Mixin
@@ -191,12 +221,24 @@
 // Gallery item links
 .gallery .image-link {
     display: block;
-    height: 280px;
+    padding-top: 100%; // Should keep gallery perfectly square at any size.
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     @media @tablet {
         height: 210px;
+    }
+
+    // Adds slight black tint to image so the text is more readble
+    &:after {
+        content: "";
+        background-color: fade(@color-swatch7, 15%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
     }
 }
 
@@ -247,6 +289,7 @@ a.gallery__caption-link:hover {
     width: 100%;
     position: absolute;
     bottom: 0;
+    z-index: 2;
 
     @media @tablet {
         display: none;
@@ -570,7 +613,7 @@ button,
 .form-body {
     margin: 30px 0;
     @media @mobile {
-        margin: 20px;
+        margin: 20px 0;
     }
 }
 
