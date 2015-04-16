@@ -105,21 +105,22 @@ input {
         margin-bottom: 0 auto;
     }
 
-    // Stops social icons wrapping when right side content is extra long
-    .footer-profile {
+    .footer-profile, .footer-content {
       display: inline-block;
       .flex-grow(1);
       max-width: 50%;
+
+      @media @tablet {
+        display: block;
+        max-width: 100%;
+      }
     }
 
     .footer-content {
-      display: inline-block;
-      .flex-grow(1);
       text-align: right;
-      max-width: 50%;
     }
 
-    .footer-content, .footer-profile ul {
+    .footer-content, .footer-profile {
       @media @tablet {
           text-align: center;
       }
