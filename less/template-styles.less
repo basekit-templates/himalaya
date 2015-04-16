@@ -107,13 +107,16 @@ input {
 
     // Stops social icons wrapping when right side content is extra long
     .footer-profile {
+      display: inline-block;
       .flex-grow(1);
-      min-width: 25%;
+      max-width: 50%;
     }
 
     .footer-content {
+      display: inline-block;
       .flex-grow(1);
-        text-align: right;
+      text-align: right;
+      max-width: 50%;
     }
 
     .footer-content, .footer-profile ul {
