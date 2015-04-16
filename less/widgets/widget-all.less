@@ -95,12 +95,8 @@
     min-height: 400px;
     background-size: cover;
 
-// Flexbox to vertically and horizontally align the semit transparent box
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+    // Flexbox to vertically and horizontally align the semit transparent box
+    .flex;    
     -webkit-box-pack: center;
     -moz-box-pack: center;
     -webkit-justify-content: center;
@@ -110,6 +106,7 @@
     -moz-box-align: end;
     -webkit-align-items: flex-end;
     -ms-flex-align: end;
+    -ms-align-items: flex-end;
     align-items: flex-end;
 
     // Adds a slight black tint over the whole feature to make the text more readable
@@ -191,14 +188,8 @@
 
 // Gallery list container
 .gallery-list {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    .flex;
+    .flex-wrap(wrap);
     -webkit-box-pack: justify;
     -moz-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -632,9 +623,6 @@ legend {
     font-family: @font-swatch2-font-family;
     color: @color-swatch4;
     letter-spacing: @font-swatch2-letter-spacing;
-    @media @mobile {
-        padding: 6px 20px;
-    }
 }
 
 
@@ -756,6 +744,7 @@ textarea,
 
     @media @tablet {
         margin-bottom: 10px;
+        text-align: center;
     }
 }
 
