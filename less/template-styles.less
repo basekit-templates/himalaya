@@ -108,16 +108,23 @@ input {
     .footer-profile, .footer-content {
       display: inline-block;
       .flex-grow(1);
-      max-width: 50%;
+      width: 50%;
 
       @media @tablet {
         display: block;
-        max-width: 100%;
+        width: 100%;
       }
     }
 
     .footer-content {
+
+      // For IE10 seems to ignore flexbox
+      margin-left: -4px;
       text-align: right;
+
+      @media @tablet {
+        margin-left: 0;
+      }
     }
 
     .footer-content, .footer-profile {
