@@ -1,2 +1,2 @@
 # Himalaya
-A standard BaseKit ecommerce template.
+A standard BaseKit template.
