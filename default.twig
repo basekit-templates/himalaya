@@ -2,24 +2,22 @@
 
 {% block content %}
 
-<!-- Container -->
-<div class="container">
-
     <!-- Header Include -->
     {% include "includes/header.twig" %}
 
     <!-- Page Content -->
     <section class="template-content">
 
-        <!-- Main Widget Zone -->
-        {{zone('main')|raw}}
+        <div class="container">
+
+            <!-- Main Widget Zone -->
+            {{zone('main')|raw}}
+
+        </div>
 
     </section>
     <!-- End Page Content -->
 
     {% include "includes/footer.twig" %}
-
-</div>
-<!-- End Container -->
 
 {% endblock %}

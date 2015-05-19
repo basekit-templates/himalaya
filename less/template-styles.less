@@ -3,24 +3,36 @@
 // -------------------------
 
 
-// Body Styles
-// -----------
+// Border
+// --------------
 
-// Border that runs around the body of the page
-body {
-    border: 10px solid @border-color;
+.template-header {
+  border-top: 10px solid @border-color;
+  border-left: 10px solid @border-color;
+  border-right: 10px solid @border-color;
 }
 
-// Stretch the body content to push the footer down
 .template-content {
-    margin-top: 80px;
+  border-left: 10px solid @border-color;
+  border-right: 10px solid @border-color;
+}
+
+.template-footer {
+  border-bottom: 10px solid @border-color;
+  border-left: 10px solid @border-color;
+  border-right: 10px solid @border-color;
+}
+
+
+
+// Content
+.template-content {
+    padding-top: 80px;
 
     @media @mobile {
         margin-top: 40px;
     }
 }
-
-
 
 
 
@@ -37,14 +49,14 @@ body {
 }
 
 
+// Flexbox footer
+// --------------
 
 
-// Flexbox Floating footer including IE11 bugfixes
-.container {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  height: 100%;
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .template-content{

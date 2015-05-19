@@ -1,11 +1,15 @@
 <!-- Header -->
 <header class="template-header">
 
-    {{widget('extendednavigation', 'navigation', {"align":"center"})|raw}}
+    <div class="container">
 
-    {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png'),"showTplWidget":"0"})|raw}}
+        {{widget('extendednavigation', 'navigation', {"align":"center"})|raw}}
 
-    {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+        {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png'),"showTplWidget":"0"})|raw}}
+
+        {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+
+    </div>
 
 </header>
 <!-- End Header -->
