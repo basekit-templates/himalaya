@@ -86,7 +86,7 @@
 // 4.  #Feature
 // -----------------------------
 
-.feature { 
+.feature {
     margin-bottom: 80px;
     position: relative;
 }
@@ -94,20 +94,6 @@
 .feature__background-image {
     min-height: 400px;
     background-size: cover;
-
-    // Flexbox to vertically and horizontally align the semit transparent box
-    .flex;    
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: end;
-    -moz-box-align: end;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: end;
-    -ms-align-items: flex-end;
-    align-items: flex-end;
 
     // Adds a slight black tint over the whole feature to make the text more readable
     &:after {
@@ -128,6 +114,12 @@
     background-color: fade(@color-swatch2,30%);
     position: relative;
     z-index: 2;
+
+    //Positions the yellow box to the bottom center
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
 
     // This vertically aligns the text and button
     .flex-vert-center; // Mixin
