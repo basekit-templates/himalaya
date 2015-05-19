@@ -13,7 +13,6 @@ body {
 
 // Stretch the body content to push the footer down
 .template-content {
-    flex: 1;
     margin-top: 80px;
 
     @media @mobile {
@@ -24,20 +23,31 @@ body {
 
 
 
+
 // Container
 // ---------
 
 .container {
-    display: flex; // Switch on flexbox layout
-    flex-direction: column; // Orient flexbox to columns
-    min-height: 100vh; // Set minimal height to height of the viewport
-
     max-width: 960px;
     margin: 0 auto;
 
     @media only screen and (max-width: 980px) {
       margin: 0 10px;
     }
+}
+
+
+
+
+// Flexbox Floating footer including IE11 bugfixes
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.template-content{
+  flex: 1 0 auto;
 }
 
 
