@@ -638,15 +638,11 @@ textarea,
     // Padding is set in stylesheet.less
     border: 2px solid @button-color;
     resize: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
     &:focus {
         border-color: @contrast-color;
         box-shadow: none;
-    }
-
-    @media @tablet {
-        // Fix for iOS devices
-        -webkit-appearance: none;
-        -webkit-border-radius: 0;
     }
 }
 
