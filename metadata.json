@@ -157,5 +157,50 @@
             "color": "@color-swatch4",
             "letter-spacing": "1px"
         }
+    },
+    "styles": {
+        "colors": {
+            "color__primary": "@color-swatch2",
+            "color__secondary": "@color-swatch1"
+        },
+        "site": {
+            "color__body--background": "@color-swatch1",
+            "color__body--border": "@color-swatch7",
+            "color__link--text": "@color-swatch2",
+            "color__companyname--text": "@color-swatch2"
+        },
+        "typography": {
+            "color__h1--text": "@color-swatch4",
+            "color__h2--text": "@color-swatch4",
+            "color__h3--text": "@color-swatch4",
+            "color__h4--text": "@color-swatch4",
+            "color__p--text": "@color-swatch4"
+        },
+        "button": {
+            "color__button--background": "@color-swatch3",
+            "color__button--background--hover": "lighten(@color-swatch3, 10%)",
+            "color__button--text": "@color-swatch1"
+        },
+        "header": {
+            "color__header--background": "@color__body--background"
+        },
+        "feature": {
+            "color__feature-headline--text": "@color-swatch1",
+            "color__feature-strapline--text": "@color-swatch1",
+            "color__feature-content--background": "fade(@color__primary,30%)",
+            "color__feature-button--text": "@color-swatch1",
+            "color__feature-button--background": "@color__button--background",
+            "color__feature-button--background--hover": "lighten(@color__button--background, 20%)"
+        },
+        "gallery": {
+            "color__gallery-caption--background": "fade(@color-swatch2,30%)",
+            "color__gallery-title--text": "@color-swatch1",
+            "color__gallery-description--text": "@color-swatch1"
+        },
+        "ecommerce": {
+            "color__ecomproductslist-product-item--background": "@color-swatch1",
+            "color__ecomproduct-title--text": "@color-swatch4",
+            "color__ecomproduct-price--text": "@color-swatch5"
+        }
     }
 }

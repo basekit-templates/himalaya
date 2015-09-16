@@ -1,0 +1,228 @@
+// ------------------
+// Metadata Variables
+// ------------------
+
+
+
+
+// Variables
+// ----------------
+
+
+// colors
+@color__primary: @color-swatch2;
+@color__secondary: @color-swatch1;
+
+// site
+@color__body--background: @color-swatch1;
+@color__body--border: @color-swatch7;
+@color__link--text: @color-swatch2;
+@color__companyname--text: @color-swatch4;
+
+// typography
+@color__h1--text: @color-swatch4;
+@color__h2--text: @color-swatch4;
+@color__h3--text: @color-swatch4;
+@color__h4--text: @color-swatch4;
+@color__p--text: @color-swatch4;
+
+// button
+@color__button--background: @color-swatch3;
+@color__button--background--hover: lighten(@color-swatch3, 10%);
+@color__button--text: @color-swatch1;
+
+// header
+@color__header--background: @color__body--background;
+
+// feature
+@color__feature-headline--text: @color-swatch1;
+@color__feature-strapline--text: @color-swatch1;
+@color__feature-content--background: fade(@color__primary,30%);
+@color__feature-button--text: @color-swatch1;
+@color__feature-button--background: @color__button--background;
+@color__feature-button--background--hover: lighten(@color__button--background, 20%);
+
+// gallery
+@color__gallery-caption--background: fade(@color-swatch2,30%);
+@color__gallery-title--text: @color-swatch1;
+@color__gallery-description--text: @color-swatch1;
+
+// ecommerce
+
+@color__ecomproductslist-product-item--background: @color-swatch1;
+@color__ecomproduct-title--text: @color-swatch4;
+@color__ecomproduct-price--text: @color-swatch5;
+
+
+
+// -----------------------------
+// Template colour overrides
+// -----------------------------
+
+
+// Template Colour Variables
+// -----------------------------
+
+@bg-color:              @color__body--background;                 // Background
+@bg-color-alt:          darken(@color__body--background,10%);     // Background Alt
+
+@contrast-color:        @color__primary;                          // Contrast Color
+@contrast-color-alt:    darken(@color__primary,10%);              // Contrast Color Alt
+
+@button-color:          @color__button--background;                // Button BG Color
+@button-color-alt:      lighten(@color__button--background,20%);   // Button BG Color
+
+@heading-color:         @color__h1--text;                          // Heading Text Color (H1 - H4)
+@paragraph-color:       @color__p--text;                           // Paragraph Text Color
+
+@border-color:          @color__body--border;                      // Page border Color
+
+
+
+// Site
+// ---------
+
+body {
+    background-color: @color__body--background;
+}
+
+.template-header.template-header {
+  border-top: 10px solid @color__body--border;
+  border-left: 10px solid @color__body--border;
+  border-right: 10px solid @color__body--border;
+}
+
+.template-content.template-content {
+  border-left: 10px solid @color__body--border;
+  border-right: 10px solid @color__body--border;
+  margin-bottom: -20px;
+  padding-bottom: 46px;
+}
+
+.template-footer.template-footer {
+  border-bottom: 10px solid @color__body--border;
+  border-left: 10px solid @color__body--border;
+  border-right: 10px solid @color__body--border;
+}
+
+.company-link {
+    color: @color__companyname--text;
+}
+
+
+// Typography
+// ----------
+
+a {
+    color: @color__link--text;
+}
+
+h1 {
+    color: @color__h1--text;
+}
+
+h2 {
+    color: @color__h2--text;
+}
+
+h3 {
+    color: @color__h3--text;
+}
+
+h4 {
+    color: @color__h4--text;
+}
+
+p {
+    color: @color__p--text;
+}
+
+
+
+
+// Button
+// ----------
+
+button,
+.button {
+    background-color: @color__button--background;
+    color: @color__button--text;
+    &:hover {
+        background-color: @color__button--background--hover;
+    }
+}
+
+
+
+
+// Header
+// ---------------
+
+.template-header {
+    background-color: @color__header--background;
+}
+
+
+
+
+// Feature
+// ---------------
+
+.feature {
+    &__content-wrap.content-wrap {
+        background-color: @color__feature-content--background;
+    }
+    &__headline {
+        color: @color__feature-headline--text;
+    }
+    &__strapline {
+        color: @color__feature-strapline--text;
+    }
+    &__button.button {
+        background-color: @color__feature-button--background;
+        color: @color__feature-button--text;
+        &:hover {
+            background-color: @color__feature-button--background--hover;
+        }
+    }
+}
+
+
+
+
+// Gallery
+// ---------------
+
+.gallery {
+    &__image-title.image-title {
+        color: @color__gallery-title--text;
+        background-color: @color__gallery-caption--background;
+    }
+    &__image-description.image-description {
+        color: @color__gallery-description--text;
+        background-color: @color__gallery-caption--background;
+    }
+}
+
+
+
+
+// Ecommerce
+// ---------------
+
+.ecomproductslist {
+    .product-item-image {
+        background-color: @color__ecomproductslist-product-item--background;
+    }
+}
+
+.product-item-title.product-item-title,
+.ecomproduct__product-title {
+        color: @color__ecomproduct-title--text;
+    }
+
+.product-item-price,
+.ecomproduct__product-price {
+    color: @color__ecomproduct-price--text;
+}
+
