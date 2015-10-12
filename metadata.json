@@ -164,7 +164,8 @@
             "color__secondary": "@color-swatch1"
         },
         "site": {
-            "color__body--background": "@color-swatch1"
+            "color__body--background": "@color-swatch1",
+            "color__body--border": "@color-swatch7"
         },
         "typography": {
             "color__h1--text": "@font-swatch1-color",
