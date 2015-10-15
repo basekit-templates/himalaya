@@ -202,7 +202,7 @@
             "color__ecomproduct-title--text": "@color-swatch4",
             "color__ecomproduct-price--text": "@color-swatch5"
         },
-        "navigation": {
+        "form": {
             "color__form-label--text": "@color-swatch4"
         }
     }
