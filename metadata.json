@@ -180,9 +180,6 @@
             "color__button--background--hover": "lighten(@color-swatch3, 10%)",
             "color__button--text": "@font-swatch7-color"
         },
-        "header": {
-            "color__header--background": "@color__body--background"
-        },
         "navigation": {
             "color__navigation--text": "@font-swatch6-color"
         },
