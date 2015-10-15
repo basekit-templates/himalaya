@@ -198,7 +198,6 @@
             "color__gallery-description--text": "@color-swatch1"
         },
         "ecommerce": {
-            "color__ecomproductslist-product-item--background": "@color-swatch1",
             "color__ecomproduct-title--text": "@color-swatch4",
             "color__ecomproduct-price--text": "@color-swatch5"
         },
