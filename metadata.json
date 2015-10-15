@@ -181,7 +181,8 @@
             "color__button--text": "@font-swatch7-color"
         },
         "navigation": {
-            "color__navigation--text": "@font-swatch6-color"
+            "color__navigation--text": "@font-swatch6-color",
+            "color__navigation--text--hover": "@font-swatch6-color"
         },
         "feature": {
             "color__feature-headline--text": "@font-swatch8-color",
@@ -200,6 +201,9 @@
             "color__ecomproductslist-product-item--background": "@color-swatch1",
             "color__ecomproduct-title--text": "@color-swatch4",
             "color__ecomproduct-price--text": "@color-swatch5"
+        },
+        "navigation": {
+            "color__form-label--text": "@color-swatch4"
         }
     }
 }
