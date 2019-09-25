@@ -1,0 +1,112 @@
+// -----------------------------
+// Migration Styles
+// -----------------------------
+
+
+#migrated-site {
+    // Stylseheet overrides
+    // -----------------------------
+
+    &.edit {
+        height: 100%;
+    }
+
+    .template-content {
+        margin: 0;
+    }
+
+    // Template container (replace with corresponding template classes)
+    .template-content > .container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    // Widget overflow to allow 10S overlays to display correctly
+    .widget.content {
+        overflow: inherit;
+    }
+
+    .feature {
+        margin: 0;
+    }
+
+    // Migration styles
+    // -----------------------------
+    // Replace with corresponding template values
+    @container-width: 960px;
+    @spacing-first: 80px;
+    @spacing--other: 30px;
+
+
+    // Applies spacing to widgets to mimic container width
+    .empty-zone,
+    #page-zones__main:empty,
+    #page-zones__main > .widget:not([data-name="row"]),
+    #page-zones__template-widgets__feature-featurehome {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: @container-width;
+
+        @media only screen and (max-width: 980px) {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+
+    .widget[data-name="row"]:not(.row--width-no-padding) .row__container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: @container-width;
+    }
+
+    // Move spacing to first widget in the main zone (not sections)
+    &.edit #page-zones__main-overlay + .widget:not([data-name="row"]),
+    #page-zones__template-widgets__feature-featurehome + #page-zones__main > .widget:not([data-name="row"]):first-child {
+        margin-top: @spacing-first;
+    }
+
+    // remove bottom margin for rows
+    #page-zones__main > .widget[data-name="row"]  {
+        margin-bottom: 0;
+    }
+
+    #page-zones__main > .widget[data-name="row"] + .widget:not([data-name="row"]) {
+        margin-top: @spacing--other;
+    }
+
+    // Remove spacing if widget follows a light section (change to dark if template has a dark BG)
+    #page-zones__main > .widget[data-name="row"].style--light + .widget:not([data-name="row"]) {
+        margin-top: 0;
+    }
+
+    // Adds spacing to the section when a widget is before it
+    #page-zones__main > .widget:not([data-name="row"]) + .widget[data-name="row"] {
+        margin-bottom: @spacing--other;
+        margin-top: @spacing--other;
+
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
+
+    // fix row overlay controls
+    .row-overlay:before {
+        left: -10px;
+    }
+
+    .row-overlay:after {
+        right: -10px;
+    }
+
+    &:not(.is-move-mode) .row-overlay__edit-control {
+        left: 50px;
+    }
+
+    &:not(.is-move-mode) .row-overlay__button-controls {
+        right: 18px;
+    }
+}
+
+// End of #migrated-site

@@ -1,5 +1,6 @@
 {
     "name": "Himalaya",
+    "versionTenCompatible": 1,
     "thumbnail": "thumbnail.png",
     "screenshot":"himalaya-screenshot.jpg",
     "widgetVersion":2,
